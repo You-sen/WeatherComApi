@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Know your Weather</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/weather3.webp) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="city" type="text" class="form-control" placeholder="Enter a city for Weather ...">
+                <div class="input-group-append">
+                    <button onclick="searchTemp()" type="button" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <img id="weather-icon" src="//cdn.weatherapi.com/weather/64x64/night/356.png" alt="">
+            <h1 id="city-name">Dhaka</h1>
+            <h3><span id="temperature">?</span>&deg;C</h3>
+            <h1 id="condition"class="lead">Clouds</h1>
+        </div>
+    </div>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <select id="forecastDay" class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+                <div class="input-group-append">
+                    <button onclick="ForecastTemp()" type="button" class="btn btn-warning">Forecast</button>
+                </div>
+            </div>
+        </form>
+        
+        <div class="weather-status text-white text-center">
+            <img id="weather-icon2" src="//cdn.weatherapi.com/weather/64x64/night/356.png" alt="">
+            <h1 id="fcity-name">Dhaka</h1>
+            <h3><span id="maxtemperature">Max Temperature ?</span>&deg;C</h3>
+            <h3><span id="mintemperature">Min Temperature?</span>&deg;C</h3>
+            <h1 id="fcondition"class="lead">Clouds</h1>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
